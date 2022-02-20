@@ -46,12 +46,7 @@ const Navbar = () => {
                   General
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/health">
-                  Health
-                </Link>
-              </li>
-
+             
               <li className="nav-item">
                 <Link className="nav-link" to="/science">
                   Science
