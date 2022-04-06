@@ -8,4 +8,4 @@ This project will show all the latrest news. I also categorised the news so that
 3. HTML
 4. CSS
 
-###Enjoy the app
+### Enjoy the app
