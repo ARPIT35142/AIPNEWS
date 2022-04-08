@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: url("../news\ image.jpg");
+    background-color: brown;
+  }
+  
+  .card-img-top:hover {
+    transform: scale(1.2);
+  }
+  

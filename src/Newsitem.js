@@ -5,7 +5,7 @@ const Newsitem = (props) => {
   let { title, description, imageUrl, newsUrl, author, date, source } = props;
   return (
     <div className="my-3">
-      <div className="card" style={{ width: "18rem" }}>
+      <div className="card">
         <div
           style={{
             display: "flex",
