@@ -1,11 +1,11 @@
-// import { getByTitle } from "@testing-library/react";
 import React from "react";
+import defaultImage from "../assets/default-image.jpg";
 
 const Newsitem = (props) => {
   let { title, description, imageUrl, newsUrl, author, date, source } = props;
   return (
     <div className="my-3">
-      <div className="card">
+      <div className="card shadow-sm">
         <div
           style={{
             display: "flex",
@@ -14,14 +14,10 @@ const Newsitem = (props) => {
             right: "0",
           }}
         >
-          <span className="badge rounded-pill bg-danger">{source}</span>
+          <span className="badge bg-danger">{source}</span>
         </div>
         <img
-          src={
-            !imageUrl
-              ? "https://cdn.techexplorist.com/wp-content/uploads/2022/01/flexible-oled.jpg"
-              : imageUrl
-          }
+          src={!imageUrl ? defaultImage : imageUrl}
           className="card-img-top"
           alt="..."
         />
@@ -30,7 +26,10 @@ const Newsitem = (props) => {
           <p className="card-text">{description}...</p>
           <p className="card-text">
             <small className="text-muted">
-              By {!author ? "Unknown" : author} on{" "}
+              By {!author ? "Unknown" : author}
+            </small>
+            <br />
+            <small className="text-muted">
               {new Date(date).toGMTString()}{" "}
             </small>
           </p>
@@ -38,7 +37,7 @@ const Newsitem = (props) => {
             rel="noreferrer"
             href={newsUrl}
             target="_blank"
-            className="btn btn-sm btn-dark"
+            className="btn btn-sm btn-outline-danger"
           >
             Read More
           </a>

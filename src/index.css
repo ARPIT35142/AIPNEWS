@@ -1,11 +1,49 @@
 * {
-    margin: 0;
-    padding: 0;
-    background: url("../news\ image.jpg");
-    background-color: brown;
-  }
-  
-  .card-img-top:hover {
-    transform: scale(1.2);
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #2f3542;
+  cursor: default;
+}
+.navbar-collapse {
+  flex-grow: unset;
+}
+.navbar-brand > img {
+  height: 35px;
+  width: 140px;
+  cursor: pointer;
+}
+.navbar {
+  background-color: white !important;
+}
+.heading {
+  margin: 90px 0 8px 0;
+  color: #c0392b;
+}
+
+.text-muted > span {
+  color: #c0392b;
+}
+.sub-heading {
+  font-size: 18px;
+}
+.card-img-top {
+  height: 180px;
+}
+.card {
+  border: none !important;
+}
+.badge.bg-danger {
+  opacity: 0.8;
+}
+.text-muted {
+  font-size: 12px;
+}
+.text-muted.sub-heading {
+  font-size: 16px;
+}
+.card:hover {
+  transition: 0.5s;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}

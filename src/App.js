@@ -7,7 +7,7 @@ import LoadingBar from "react-top-loading-bar";
 
 function App() {
   const pageSize = 5;
-  const apiKey = process.env.REACT_APP_NEWS_API;
+  const apiKey = "71ec61727a5a42feae3e1ad8edea99cc";
   const [progress, setProgress] = useState(0);
 
   return (
@@ -23,7 +23,8 @@ function App() {
               key="general"
               pageSize={pageSize}
               country="in"
-              category="general" />
+              category="general"
+            />
           </Route>
           <Route exact path="/business">
             <News
@@ -32,7 +33,8 @@ function App() {
               key="business"
               pageSize={pageSize}
               country="in"
-              category="business" />
+              category="business"
+            />
           </Route>
           <Route exact path="/entertainment">
             <News
@@ -41,7 +43,8 @@ function App() {
               key="entertainment"
               pageSize={pageSize}
               country="in"
-              category="entertainment" />
+              category="entertainment"
+            />
           </Route>
           <Route exact path="/general">
             <News
@@ -50,7 +53,8 @@ function App() {
               key="general"
               pageSize={pageSize}
               country="in"
-              category="general" />
+              category="general"
+            />
           </Route>
           <Route exact path="health">
             <News
@@ -59,7 +63,8 @@ function App() {
               key="health"
               pageSize={pageSize}
               country="in"
-              category="health" />
+              category="health"
+            />
           </Route>
           <Route exact path="/science">
             <News
@@ -68,7 +73,8 @@ function App() {
               key="science"
               pageSize={pageSize}
               country="in"
-              category="science" />
+              category="science"
+            />
           </Route>
           <Route exact path="/sports">
             <News
@@ -77,7 +83,8 @@ function App() {
               key="sports"
               pageSize={pageSize}
               country="in"
-              category="sports" />
+              category="sports"
+            />
           </Route>
           <Route exact path="/technology">
             <News
@@ -86,7 +93,8 @@ function App() {
               key="technology"
               pageSize={pageSize}
               country="in"
-              category="technology" />
+              category="technology"
+            />
           </Route>
         </Switch>
       </Router>
